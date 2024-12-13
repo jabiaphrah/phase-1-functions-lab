@@ -1,5 +1,4 @@
-// index.js
-
+// Export the functions so they can be used in the test file
 function distanceFromHqInBlocks(pickupLocation) {
     return Math.abs(pickupLocation - 42); // HQ is on 42nd street
   }
@@ -35,4 +34,10 @@ function distanceFromHqInBlocks(pickupLocation) {
     distanceTravelledInFeet,
     calculatesFarePrice
   };
-  
+  // Import the functions from index.js
+const {
+  distanceFromHqInBlocks,
+  distanceFromHqInFeet,
+  distanceTravelledInFeet,
+  calculatesFarePrice
+} = require('../index'); // Adjust the path as needed based on your file structure
